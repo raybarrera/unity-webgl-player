@@ -1,7 +1,7 @@
 {
-  "name": "vite-project",
+  "name": "unity-player",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "main": "dist/my-element.es.js",
   "exports": {
@@ -14,7 +14,8 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build"
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "lit": "^2.4.1"

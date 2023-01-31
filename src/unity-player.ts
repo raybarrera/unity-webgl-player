@@ -7,8 +7,10 @@ export class UnityPlayer extends LitElement {
     p { color: black}
     `;
 
+    @property()
+    name?: string = "world";
 
     render() {
-        return html`<p> Hello !</p>`;
+        return html`<p> Hello ${this.name}!</p>`;
     }
 }
