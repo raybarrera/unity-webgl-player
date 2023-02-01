@@ -10,10 +10,10 @@ export class UnityPlayer extends LitElement {
     container?: string;
     
     @property()
-    viewportWidth?: int = 100;
+    width?: int = 100;
     
     @property()
-    viewportHeight?: int = 100;
+    height?: int = 100;
     
     get gameContainer() {
         return this.renderRoot.querySelector("#game-container");
@@ -28,7 +28,6 @@ export class UnityPlayer extends LitElement {
     
     override connectedCallback () {
         super.connectedCallback();
-        //this.id = "gameContainer"
         var script = document.createElement("script");
         script.src = this.loader;
         script.onload = () => {
@@ -40,6 +39,6 @@ export class UnityPlayer extends LitElement {
 
     render() {
         return html`
-        <div id="game-container" style="width: ${this.viewportWidth}%; height: ${this.viewportHeight}%;"></div>`;
+        <div id="game-container" style="width: ${this.width}%; height: ${this.height}%;"></div>`;
     }
 }
