@@ -1,4 +1,4 @@
-# Unity Player Native Web Component
+# Unity WebGL Player Web Component
 How to run:
 - npm install
 - npx vite build
