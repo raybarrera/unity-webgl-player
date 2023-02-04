@@ -3,11 +3,12 @@
   "private": false,
   "version": "0.0.3",
   "type": "module",
-  "main": "dist/my-element.es.js",
+  "module": "unity-webgl-player.js",
+  "main": "unity-webgl-player.es.js",
   "exports": {
-    ".": "./dist/my-element.es.js"
+    ".": "./dist/unity-webgl-player.es.js"
   },
-  "types": "types/my-element.d.ts",
+  "types": "types/unity-webgl-player.d.ts",
   "files": [
     "dist",
     "types"
