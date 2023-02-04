@@ -13,11 +13,11 @@ export class UnityPlayer extends LitElement {
    
     // Width in percentage points of the game-container element used by the WebGL canvas.
     @property()
-    width?: int = 100;
+    width?: number = 100;
     
     // Height in percentage points of the game-container element used by the WebGL canvas.
     @property()
-    height?: int = 100;
+    height?: number = 100;
     
     get gameContainer() {
         return this.renderRoot.querySelector("#game-container");
@@ -25,7 +25,7 @@ export class UnityPlayer extends LitElement {
 
     constructor() {
         super();
-        this.addEventListener('loader-loaded', (e)=> {
+        this.addEventListener('loader-loaded', ()=> {
             UnityLoader.instantiate(this.gameContainer, this.container);
         });
     }
