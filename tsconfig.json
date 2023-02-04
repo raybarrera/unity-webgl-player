@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
+    "target": "es6",
+    "module": "esnext",
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "declaration": true,
     "emitDeclarationOnly": true,

@@ -8,7 +8,7 @@
   "exports": {
     ".": "./dist/unity-webgl-player.es.js"
   },
-  "types": "types/unity-webgl-player.d.ts",
+  "types": "dist/unity-webgl-player.d.ts",
   "files": [
     "dist",
     "types"

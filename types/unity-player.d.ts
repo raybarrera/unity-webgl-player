@@ -1,7 +1,7 @@
 import { LitElement } from 'lit';
 export declare class UnityPlayer extends LitElement {
-    loader?: string;
-    container?: string;
+    loader: string;
+    container: string;
     width?: number;
     height?: number;
     get gameContainer(): Element | null;
