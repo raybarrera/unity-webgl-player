@@ -5,9 +5,6 @@
   "type": "module",
   "module": "dist/unity-webgl-player.js",
   "main": "dist/unity-webgl-player.js",
-  "exports": {
-    ".": "./dist/unity-webgl-player.es.js"
-  },
   "types": "types/unity-webgl-player.d.ts",
   "files": [
     "dist",
