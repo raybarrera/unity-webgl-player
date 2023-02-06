@@ -1,11 +1,11 @@
 {
   "name": "@raybarrera/unity-webgl-player",
   "private": false,
-  "version": "0.0.17",
+  "version": "0.0.18",
   "type": "module",
   "module": "dist/unity-webgl-player.js",
-  "main": "dist/unity-webgl-player.js",
-  "types": "types/unity-webgl-player.d.ts",
+  "main": "dist/unity-webgl-player",
+  "types": "types/unity-webgl-player",
   "files": [
     "dist",
     "types"
