@@ -9,3 +9,4 @@ export declare class UnityPlayer extends LitElement {
     connectedCallback(): void;
     render(): import("lit-html").TemplateResult<1>;
 }
+//# sourceMappingURL=unity-player.d.ts.map

@@ -2,7 +2,9 @@ import {LitElement, html} from 'lit';
 import {customElement, property} from 'lit/decorators.js';
 
 declare var UnityLoader:any;
+
 @customElement('unity-player')
+
 export class UnityPlayer extends LitElement {
     // Location of the UnityLoader.js file used by unity webgl builds.
     @property()
@@ -43,7 +45,6 @@ export class UnityPlayer extends LitElement {
     }
 
     render() {
-        return html`
-        <div id="game-container" style="width: ${this.width}%; height: ${this.height}%;"></div>`;
+        return html`<div id="game-container" style="width: ${this.width}%; height: ${this.height}%;"></div>`;
     }
 }

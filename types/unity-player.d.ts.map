@@ -1,0 +1,1 @@
+{"version":3,"file":"unity-player.d.ts","sourceRoot":"","sources":["../src/unity-player.ts"],"names":[],"mappings":"AAAA,OAAO,EAAC,UAAU,EAAO,MAAM,KAAK,CAAC;AAKrC,qBAEa,WAAY,SAAQ,UAAU;IAGvC,MAAM,EAAE,MAAM,CAAM;IAIpB,SAAS,EAAE,MAAM,CAAM;IAIvB,KAAK,CAAC,EAAE,MAAM,CAAO;IAIrB,MAAM,CAAC,EAAE,MAAM,CAAO;IAEtB,IAAI,aAAa,mBAEhB;;IASQ,iBAAiB;IAW1B,MAAM;CAGT"}
