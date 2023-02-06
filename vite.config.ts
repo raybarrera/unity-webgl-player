@@ -9,7 +9,6 @@ export default defineConfig({
       formats: ['es'],
     },
     rollupOptions: {
-      external: ['lit']
     },
   },
 })
