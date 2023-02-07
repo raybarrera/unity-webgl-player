@@ -26,22 +26,25 @@ export class UnityPlayer extends LitElement {
         return this.renderRoot.querySelector("#game-container");
     }
 
-    constructor() {
-        super();
-        window.addEventListener('loader-loaded', ()=> {
-            UnityLoader.instantiate(this.gameContainer, this.container);
-        });
+     onUnityLoaderLoadComplete() {
+         UnityLoader.instantiate(this.gameContainer, this.container);
     }
-    
+
     override connectedCallback () {
         super.connectedCallback();
+        this.addEventListener('loader-loaded', this.onUnityLoaderLoadComplete);
         var script = document.createElement("script");
         script.src = this.loader;
         script.onload = () => {
             var ev = new Event('loader-loaded');
-            window.dispatchEvent(ev);
+            this.dispatchEvent(ev);
         };
         document.body.appendChild(script);
+    }
+
+    override disconnectedCallback() {
+        super.disconnectedCallback();
+        window.removeEventListener('loader-loaded', this.onUnityLoaderLoadComplete);
     }
 
     render() {
