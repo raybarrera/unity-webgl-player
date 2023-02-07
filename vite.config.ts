@@ -5,7 +5,7 @@ export default defineConfig({
   base: './',
   build: {
     lib: {
-      entry: 'src/unity-player.ts',
+      entry: 'index.html',
       formats: ['es'],
     },
     rollupOptions: {

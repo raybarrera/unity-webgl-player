@@ -28,7 +28,7 @@ export class UnityPlayer extends LitElement {
 
     constructor() {
         super();
-        this.addEventListener('loader-loaded', ()=> {
+        window.addEventListener('loader-loaded', ()=> {
             UnityLoader.instantiate(this.gameContainer, this.container);
         });
     }
