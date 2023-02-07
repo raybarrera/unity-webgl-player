@@ -39,7 +39,7 @@ export class UnityPlayer extends LitElement {
         script.src = this.loader;
         script.onload = () => {
             var ev = new Event('loader-loaded');
-            this.dispatchEvent(ev);
+            window.dispatchEvent(ev);
         };
         document.body.appendChild(script);
     }
